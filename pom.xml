@@ -31,22 +31,22 @@
     </pluginRepository>
   </pluginRepositories>
   <build>
-    <sourceDirectory>C:\Users\naemr\Documents\Eclipse\XRazer\src\main\java</sourceDirectory>
-    <scriptSourceDirectory>C:\Users\naemr\Documents\Eclipse\XRazer\src\main\scripts</scriptSourceDirectory>
-    <testSourceDirectory>C:\Users\naemr\Documents\Eclipse\XRazer\src\test\java</testSourceDirectory>
-    <outputDirectory>C:\Users\naemr\Documents\Eclipse\XRazer\target\classes</outputDirectory>
-    <testOutputDirectory>C:\Users\naemr\Documents\Eclipse\XRazer\target\test-classes</testOutputDirectory>
+    <sourceDirectory>src/main/java</sourceDirectory>
+    <scriptSourceDirectory>src/main/scripts</scriptSourceDirectory>
+    <testSourceDirectory>src/test/java</testSourceDirectory>
+    <outputDirectory>target/classes</outputDirectory>
+    <testOutputDirectory>target/test-classes</testOutputDirectory>
     <resources>
       <resource>
-        <directory>C:\Users\naemr\Documents\Eclipse\XRazer\src\main\resources</directory>
+        <directory>src/main/resources</directory>
       </resource>
     </resources>
     <testResources>
       <testResource>
-        <directory>C:\Users\naemr\Documents\Eclipse\XRazer\src\test\resources</directory>
+        <directory>src/test/resources</directory>
       </testResource>
     </testResources>
-    <directory>C:\Users\naemr\Documents\Eclipse\XRazer\target</directory>
+    <directory>target</directory>
     <finalName>XRazer-0.0.1-SNAPSHOT</finalName>
     <pluginManagement>
       <plugins>
@@ -185,7 +185,7 @@
               <goal>site</goal>
             </goals>
             <configuration>
-              <outputDirectory>C:\Users\naemr\Documents\Eclipse\XRazer\target\site</outputDirectory>
+              <outputDirectory>target/site</outputDirectory>
               <reportPlugins>
                 <reportPlugin>
                   <groupId>org.apache.maven.plugins</groupId>
@@ -201,7 +201,7 @@
               <goal>deploy</goal>
             </goals>
             <configuration>
-              <outputDirectory>C:\Users\naemr\Documents\Eclipse\XRazer\target\site</outputDirectory>
+              <outputDirectory>target/site</outputDirectory>
               <reportPlugins>
                 <reportPlugin>
                   <groupId>org.apache.maven.plugins</groupId>
@@ -212,7 +212,7 @@
           </execution>
         </executions>
         <configuration>
-          <outputDirectory>C:\Users\naemr\Documents\Eclipse\XRazer\target\site</outputDirectory>
+          <outputDirectory>target/site</outputDirectory>
           <reportPlugins>
             <reportPlugin>
               <groupId>org.apache.maven.plugins</groupId>
@@ -224,6 +224,6 @@
     </plugins>
   </build>
   <reporting>
-    <outputDirectory>C:\Users\naemr\Documents\Eclipse\XRazer\target\site</outputDirectory>
+    <outputDirectory>target/site</outputDirectory>
   </reporting>
 </project>
