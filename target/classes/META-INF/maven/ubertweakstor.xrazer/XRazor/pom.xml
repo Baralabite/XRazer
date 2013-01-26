@@ -5,4 +5,9 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>XRazor</name>
   <description>XRay Detector for Tekkit Server v1.2.5		</description>
+  <scm>
+  	<url>https://github.com/boar401s2/XRazer</url>
+  	<developerConnection>boar401s2</developerConnection>
+  </scm>
+  <url>https://github.com/boar401s2/XRazer</url>
 </project>
