@@ -1,0 +1,12 @@
+name: XRazer
+author: Ubertweakstor
+date: 18/12/2012 20:59
+main: ubertweakstor.xrazer.XRazer
+version: 1.2.5
+
+commands:
+   xrazer:
+      description: This is the parent command to all xrazer commands
+      permission: xrazer.access
+      usage: /<command> [parameters]
+      permission-message: &cYou don't have permission to execute this command.

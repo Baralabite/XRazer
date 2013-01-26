@@ -1,0 +1,8 @@
+LoggedBlocks:
+- 14
+- 56
+WhitelistedPlayers:
+- null
+XRayThreshold: 25
+AlertPeriod: 2
+ResetPeriod: 10
