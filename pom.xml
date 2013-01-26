@@ -7,7 +7,16 @@
   <version>1.2.7-SNAPSHOT</version>
   <name>XRazer</name>
   <description>XRay Detector for Tekkit Server v1.2.5</description>
+  <url>https://github.com/boar401s2/XRazer</url>
+  
+  
+  
   <repositories>
+    <repositories>
+    <repository>
+      <id>bukkit-repo</id>
+      <url>http://repo.bukkit.org/content/groups/public</url>
+    </repository>
     <repository>
       <snapshots>
         <enabled>false</enabled>
@@ -17,6 +26,7 @@
       <url>http://repo.maven.apache.org/maven2</url>
     </repository>
   </repositories>
+  
   <pluginRepositories>
     <pluginRepository>
       <releases>
@@ -30,6 +40,7 @@
       <url>http://repo.maven.apache.org/maven2</url>
     </pluginRepository>
   </pluginRepositories>
+  
   <build>
     <sourceDirectory>src/main/java</sourceDirectory>
     <scriptSourceDirectory>src/main/scripts</scriptSourceDirectory>
@@ -216,7 +227,9 @@
       </plugin>
     </plugins>
   </build>
+  
   <reporting>
     <outputDirectory>target/site</outputDirectory>
   </reporting>
+  
 </project>
