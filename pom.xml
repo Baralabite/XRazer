@@ -4,8 +4,8 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>XRazer</groupId>
   <artifactId>XRazer</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>XRazer.jar</name>
+  <version>1.2.7-SNAPSHOT</version>
+  <name>XRazer</name>
   <description>XRay Detector for Tekkit Server v1.2.5</description>
   <repositories>
     <repository>
@@ -33,21 +33,15 @@
   <build>
     <sourceDirectory>src/main/java</sourceDirectory>
     <scriptSourceDirectory>src/main/scripts</scriptSourceDirectory>
-    <testSourceDirectory>src/test/java</testSourceDirectory>
     <outputDirectory>target/classes</outputDirectory>
-    <testOutputDirectory>target/test-classes</testOutputDirectory>
     <resources>
       <resource>
         <directory>src/main/resources</directory>
       </resource>
     </resources>
-    <testResources>
-      <testResource>
-        <directory>src/test/resources</directory>
-      </testResource>
     </testResources>
     <directory>target</directory>
-    <finalName>XRazer-0.0.1-SNAPSHOT</finalName>
+    <finalName>${project.name}-${project.version}</finalName>
     <pluginManagement>
       <plugins>
         <plugin>
