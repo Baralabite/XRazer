@@ -39,7 +39,6 @@
         <directory>src/main/resources</directory>
       </resource>
     </resources>
-    </testResources>
     <directory>target</directory>
     <finalName>${project.name}-${project.version}</finalName>
     <pluginManagement>
