@@ -4,7 +4,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -34,7 +33,7 @@ public class XRazerCommandExecutor {
 			return true;
 		}
 		Player player = (Player) sender;
-		String subname = "";
+		String subname;
 
 		if (label.equalsIgnoreCase("xrazer")) {
 			if (args.length == 0) {

@@ -9,7 +9,6 @@ import java.util.Map;
 import org.bukkit.entity.Player;
 
 public class BlockLogger {
-
 	XRazer parent;
 	HashMap<Player, Score> scores = new HashMap<Player, Score>();
 
@@ -64,6 +63,13 @@ public class BlockLogger {
 		return possibleXrayers;
 	}
 
+        /*
+	 * Name: clearScores()
+         * Description: Clears everyone's mining scores
+	 * Returns: None
+	 * Parameters: None
+	 * Requirements: None
+	 */
 	@SuppressWarnings("rawtypes")
 	public void clearScores() {
 		Iterator it = scores.entrySet().iterator();
@@ -74,13 +80,13 @@ public class BlockLogger {
 	}
 
 	/*
-	 * Name: getBlockID Description: Get's the blockid, from the id, and data
+	 * Name: getBlockID 
+         * Description: Get's the blockid, from the id, and data
 	 * Returns: String, similar to: "35:0", which would be white wool
 	 * Parameters: int id: The block's id, int data: The data of the block
 	 * Requirements: None
 	 */
 	public String getBlockID(int id, int data) {
-		return String.valueOf(id) + ":" + String.valueOf(data);
+		return String.valueOf(id) + "," + String.valueOf(data);
 	}
-
 }

@@ -7,14 +7,11 @@
 package ubertweakstor.xrazer;
 
 import java.util.List;
-
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import ubertweakstor.xrazer.Log;
 
 public class XRazer extends JavaPlugin {
 

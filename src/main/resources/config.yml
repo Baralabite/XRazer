@@ -1,6 +1,7 @@
 LoggedBlocks:
 - 14
 - 56
+- 140,1
 WhitelistedPlayers:
 - null
 XRayThreshold: 25

@@ -4,7 +4,7 @@ import java.util.logging.Logger;
 
 public class Log {
 
-	Logger log = Logger.getLogger("Minecraft");
+	static final Logger log = Logger.getLogger("Minecraft");
 	String VERSION = "1.2.7";
 	String LOG_PREFIX = "[XRazer v" + VERSION + "] ";
 
