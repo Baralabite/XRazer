@@ -6,7 +6,7 @@
   <artifactId>XRazer</artifactId>
   <version>1.2.7-SNAPSHOT</version>
   <name>XRazer</name>
-  <description>XRay Detector for Tekkit Server v1.2.5</description>
+  <description>XRay Detector for Tekkit/Bukkit</description>
   <url>https://github.com/boar401s2/XRazer</url>
    <repositories>
     <repository>
