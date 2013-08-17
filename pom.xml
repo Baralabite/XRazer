@@ -8,238 +8,40 @@
   <name>XRazer</name>
   <description>XRay Detector for Tekkit Server v1.2.5</description>
   <url>https://github.com/boar401s2/XRazer</url>
-  
-  
-  
-  <repositories>
+   <repositories>
     <repository>
       <id>bukkit-repo</id>
       <url>http://repo.bukkit.org/content/groups/public</url>
     </repository>
-    <repository>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-      <id>central</id>
-      <name>Central Repository</name>
-      <url>http://repo.maven.apache.org/maven2</url>
-    </repository>
   </repositories>
-  
-  <pluginRepositories>
-    <pluginRepository>
-      <releases>
-        <updatePolicy>never</updatePolicy>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-      <id>central</id>
-      <name>Central Repository</name>
-      <url>http://repo.maven.apache.org/maven2</url>
-    </pluginRepository>
-  </pluginRepositories>
-  
-    <dependencies>
-    <!-- You don't necessarily need to depend on Permissions if you don't want to, but this is how you add a dependency -->
+
+  <dependencies>
     <dependency>
       <groupId>org.bukkit</groupId>
       <artifactId>bukkit</artifactId>
-      <version>1.2.5-R5.0</version>
+      <version>1.6.2-R0.1</version>
       <type>jar</type>
       <scope>compile</scope>
     </dependency>
   </dependencies>
-  
+
   <build>
-    <sourceDirectory>src/main/java</sourceDirectory>
-    <scriptSourceDirectory>src/main/scripts</scriptSourceDirectory>
-    <outputDirectory>target/classes</outputDirectory>
     <resources>
       <resource>
         <directory>src/main/resources</directory>
+        <filtering>true</filtering>
       </resource>
     </resources>
-    <directory>target</directory>
-    <finalName>${project.name}-${project.version}</finalName>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <artifactId>maven-antrun-plugin</artifactId>
-          <version>1.3</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-assembly-plugin</artifactId>
-          <version>2.2-beta-5</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-dependency-plugin</artifactId>
-          <version>2.1</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-release-plugin</artifactId>
-          <version>2.0</version>
-        </plugin>
-      </plugins>
-    </pluginManagement>
     <plugins>
       <plugin>
-        <artifactId>maven-clean-plugin</artifactId>
-        <version>2.4.1</version>
-        <executions>
-          <execution>
-            <id>default-clean</id>
-            <phase>clean</phase>
-            <goals>
-              <goal>clean</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <artifactId>maven-install-plugin</artifactId>
-        <version>2.3.1</version>
-        <executions>
-          <execution>
-            <id>default-install</id>
-            <phase>install</phase>
-            <goals>
-              <goal>install</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <artifactId>maven-resources-plugin</artifactId>
-        <version>2.5</version>
-        <executions>
-          <execution>
-            <id>default-resources</id>
-            <phase>process-resources</phase>
-            <goals>
-              <goal>resources</goal>
-            </goals>
-          </execution>
-          <execution>
-            <id>default-testResources</id>
-            <phase>process-test-resources</phase>
-            <goals>
-              <goal>testResources</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.10</version>
-        <executions>
-          <execution>
-            <id>default-test</id>
-            <phase>test</phase>
-            <goals>
-              <goal>test</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>2.3.2</version>
-        <executions>
-          <execution>
-            <id>default-testCompile</id>
-            <phase>test-compile</phase>
-            <goals>
-              <goal>testCompile</goal>
-            </goals>
-          </execution>
-          <execution>
-            <id>default-compile</id>
-            <phase>compile</phase>
-            <goals>
-              <goal>compile</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <artifactId>maven-jar-plugin</artifactId>
-        <version>2.3.2</version>
-        <executions>
-          <execution>
-            <id>default-jar</id>
-            <phase>package</phase>
-            <goals>
-              <goal>jar</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <artifactId>maven-deploy-plugin</artifactId>
-        <version>2.7</version>
-        <executions>
-          <execution>
-            <id>default-deploy</id>
-            <phase>deploy</phase>
-            <goals>
-              <goal>deploy</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <artifactId>maven-site-plugin</artifactId>
         <version>3.0</version>
-        <executions>
-          <execution>
-            <id>default-site</id>
-            <phase>site</phase>
-            <goals>
-              <goal>site</goal>
-            </goals>
-            <configuration>
-              <outputDirectory>target/site</outputDirectory>
-              <reportPlugins>
-                <reportPlugin>
-                  <groupId>org.apache.maven.plugins</groupId>
-                  <artifactId>maven-project-info-reports-plugin</artifactId>
-                </reportPlugin>
-              </reportPlugins>
-            </configuration>
-          </execution>
-          <execution>
-            <id>default-deploy</id>
-            <phase>site-deploy</phase>
-            <goals>
-              <goal>deploy</goal>
-            </goals>
-            <configuration>
-              <outputDirectory>target/site</outputDirectory>
-              <reportPlugins>
-                <reportPlugin>
-                  <groupId>org.apache.maven.plugins</groupId>
-                  <artifactId>maven-project-info-reports-plugin</artifactId>
-                </reportPlugin>
-              </reportPlugins>
-            </configuration>
-          </execution>
-        </executions>
         <configuration>
-          <outputDirectory>target/site</outputDirectory>
-          <reportPlugins>
-            <reportPlugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-project-info-reports-plugin</artifactId>
-            </reportPlugin>
-          </reportPlugins>
+          <source>1.5</source>
+          <target>1.5</target>
         </configuration>
       </plugin>
     </plugins>
   </build>
-  
-  <reporting>
-    <outputDirectory>target/site</outputDirectory>
-  </reporting>
-  
 </project>
