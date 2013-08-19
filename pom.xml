@@ -8,13 +8,24 @@
   <name>XRazer</name>
   <description>XRay Detector for Tekkit/Bukkit</description>
   <url>https://github.com/boar401s2/XRazer</url>
-   <repositories>
+    <repositories>
     <repository>
       <id>bukkit-repo</id>
       <url>http://repo.bukkit.org/content/groups/public</url>
     </repository>
+    <repository>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>central</id>
+      <name>Central Repository</name>
+      <url>http://repo.maven.apache.org/maven2</url>
+    </repository>
+    <repository>
+	<id>vault-repo</id>
+	<url>http://ci.herocraftonline.com/plugin/repository/everything</url>
+    </repository>
   </repositories>
-
   <dependencies>
     <dependency>
       <groupId>org.bukkit</groupId>
@@ -23,8 +34,13 @@
       <type>jar</type>
       <scope>compile</scope>
     </dependency>
+    <dependency>
+        <groupId>net.milkbowl.vault</groupId>
+        <artifactId>Vault</artifactId>
+        <version>1.2.14-SNAPSHOT</version>
+    </dependency>
   </dependencies>
-
+  
   <build>
     <resources>
       <resource>
